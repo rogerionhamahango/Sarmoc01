@@ -406,18 +406,18 @@
                                             </ul>
                                             <div class="tab-content twitter-bs-wizard-tab-content">
                                                 <div class="tab-pane" id="seller-details">
-                                                    <form method="POST" action="{{route('store1')}}" enctype="multipart/form-data">
+                                                    <form method="POST" action="{{route('store')}}" enctype="multipart/form-data">
                                                         @csrf
                                                         <div class="row">
                                                             <div class="col-lg-6">
                                                                 <div class="mb-3">
                                                                     <label class="form-label" for="basicpill-firstname-input">Full name</label>
-                                                                    <input type="text" class="form-control" id="basicpill-firstname-input" placeholder="Fill in the worker's name in this field " name="fullname" required>
+                                                                    <input type="text" class="form-control" id="basicpill-firstname-input" placeholder="Fill in the worker's name in this field " name="fullname">
                                                                     
                                                                 </div>
                                                                 <div class="mb-3">
                                                                     <label class="form-label" for="basicpill-lastname-input">NUIT</label>
-                                                                    <input type="text" class="form-control" id="basicpill-lastname-input" placeholder="Fill in the worker's nuit in this field" name= "nuit" required>
+                                                                    <input type="text" class="form-control" id="basicpill-lastname-input" placeholder="Fill in the worker's nuit in this field" name= "nuit">
                                                                    
                                                                     
                                                                 </div>
@@ -425,7 +425,7 @@
                                                                 <div class="mb-3">
                                                                     <label class="form-label" for="basicpill-lastname-input">Province of birth</label>
                                                                     
-                                                                    <select class="form-select" required name="provinceofbirth">
+                                                                    <select class="form-select" name="provinceofbirth">
                                                                             <option selected>Select Province</option>
                                                                             <option value="Maputo">Maputo</option>
                                                                             <option value="Gaza">Gaza</option>
@@ -448,7 +448,7 @@
                                                             <div class="col-lg-6">
                                                                 <div class="mb-3">
                                                                 <label>Gender</label>
-                                                                      <select class="form-select" name = "gender" required>
+                                                                      <select class="form-select" name = "gender">
                                                                             <option selected>Select gender</option>
                                                                             <option value="M">Male</option>
                                                                             <option value="F">Famele</option>
@@ -457,13 +457,13 @@
                                                                 </div>
                                                                 <div class="mb-3">
                                                                     <label class="form-label" for="basicpill-lastname-input">Number of Identification Domcument</label>
-                                                                    <input type="text" class="form-control" id="basicpill-lastname-input" placeholder="Fill in the worker's document number in this field" name="numberofdocument" required>
+                                                                    <input type="text" class="form-control" id="basicpill-lastname-input" placeholder="Fill in the worker's document number in this field" name="numberofdocument">
                                                                     
                                                                 </div>
                                                                 
                                                                 <div class="mb-3">
                                                                     <label class="form-label" for="basicpill-lastname-input">District of birth</label>
-                                                                    <input type="text" class="form-control" id="basicpill-lastname-input" placeholder="Fill in the worker's District of birth" name="districofbirth" required>
+                                                                    <input type="text" class="form-control" id="basicpill-lastname-input" placeholder="Fill in the worker's District of birth" name="districofbirth">
                                                                    
                                                                     
                                                                 </div>
@@ -474,15 +474,15 @@
                                                             <div class="col-lg-6">
                                                                 <div class="mb-3">
                                                                     <label class="form-label" for="basicpill-phoneno-input">Full Father's name</label>
-                                                                    <input type="text" class="form-control" id="basicpill-phoneno-input" placeholder="Fill in the worker's father name" name="fullfathername" required>
+                                                                    <input type="text" class="form-control" id="basicpill-phoneno-input" placeholder="Fill in the worker's father name" name="fullfathername">
                                                                 </div>
                                                                 <div class="mb-3">
                                                                     <label class="form-label" for="basicpill-phoneno-input">Birth day</label>
-                                                                    <input type="date" class="form-control" id="basicpill-phoneno-input" required name="birthday">
+                                                                    <input type="date" class="form-control" id="basicpill-phoneno-input"  name="birthday">
                                                                 </div>
                                                                 <div class="mb-3">
                                                                 <label>Academic level</label>
-                                                                      <select class="form-select" required name="academiclevel">
+                                                                      <select class="form-select" name="academiclevel">
                                                                             <option selected>Academic level</option>
                                                                             <option value="Basic_Prof">Basic profissional</option>
                                                                             <option value="B_SNE">Basic SNE</option>
@@ -496,34 +496,34 @@
                                                                 </div>
                                                                 <div class="mb-3">
                                                                     <label class="form-label" for="basicpill-email-input">Cellphone number 1</label>
-                                                                    <input type="text" class="form-control" id="basicpill-email-input" placeholder="Fill in the worker's Cellphone number" name="phone1" required>
+                                                                    <input type="text" class="form-control" id="basicpill-email-input" placeholder="Fill in the worker's Cellphone number" name="phone1">
                                                                 </div>
 
                                                                 <div class="mb-3">
                                                                     <label class="form-label" for="basicpill-email-input">Upload Document of identification</label>
-                                                                    <input type="file" class="form-control" id="basicpill-email-input" name="document" required>
+                                                                    <input type="file" class="form-control" id="basicpill-email-input" name="document">
                                                                 </div>
                                                             </div>
                                                             <div class="col-lg-6">
                                                                 <div class="mb-3">
                                                                     <label class="form-label" for="basicpill-email-input">Full Mothers'name</label>
-                                                                    <input type="text" class="form-control" id="basicpill-email-input" placeholder="Fill in the worker's mother name" name="fullmothername" required>
+                                                                    <input type="text" class="form-control" id="basicpill-email-input" placeholder="Fill in the worker's mother name" name="fullmothername">
                                                                 </div>
                                                                 <div class="mb-3">
                                                                     <label class="form-label" for="basicpill-phoneno-input">Admission date</label>
-                                                                    <input type="date" class="form-control" id="basicpill-phoneno-input" name="admissiondate" required>
+                                                                    <input type="date" class="form-control" id="basicpill-phoneno-input" name="admissiondate">
                                                                 </div>
                                                                 <div class="mb-3">
                                                                     <label class="form-label" for="basicpill-email-input">Training area</label>
-                                                                    <input type="text" class="form-control" id="basicpill-email-input" placeholder="Fill in the worker's training area" name="trainingarea" required>
+                                                                    <input type="text" class="form-control" id="basicpill-email-input" placeholder="Fill in the worker's training area" name="trainingarea">
                                                                 </div>
                                                                 <div class="mb-3">
                                                                     <label class="form-label" for="basicpill-email-input">Cellphone number 2</label>
-                                                                    <input type="text" class="form-control" id="basicpill-email-input" name="phone2" placeholder="Fill in alternative phone number" required>
+                                                                    <input type="text" class="form-control" id="basicpill-email-input" name="phone2" placeholder="Fill in alternative phone number">
                                                                 </div>
                                                                 <div class="mb-3">
                                                                     <label class="form-label" for="basicpill-email-input">Upload employment contract</label>
-                                                                    <input type="file" class="form-control" id="basicpill-email-input" name="contract" required>
+                                                                    <input type="file" class="form-control" id="basicpill-email-input" name="contract">
                                                                 </div>
                                                                 
                                                             </div>

@@ -17,11 +17,12 @@ Route::get('/', [SarmoController::class, 'login'])->name('login');
 Route::get('/createuser', [SarmoController::class, 'createuser'])->name('createuser');
 Route::get('/recoverpassword', [SarmoController::class, 'recoverpassword'])->name('recoverpassword');
 Route::get('/register', [SarmoController::class, 'register'])->name('register');
+Route::post('/store', [SarmoController::class, 'store'])->name('store');
 Route::get('/calendar', [SarmoController::class, 'calendar'])->name('calendar');
 Route::post('/store1', [SarmoController::class, 'store1'])->name('store1');
 Route::get('/disciplinary_process', [SarmoController::class, 'disciplinary_process'])->name('disciplinary_process');
 //Route::get('/register', [SarmoController::class, 'register'])->name('register');
-Route::post('/store', [SarmoController::class, 'store'])->name('store');
+
 
 Route::get('/prise', [SarmoController::class, 'prise'])->name('prise');
 Route::get('/appointement', [SarmoController::class, 'appointement'])->name('appointement');

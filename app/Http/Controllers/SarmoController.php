@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\CreateUser;
+use App\Models\Registerfirs;
 
 use Illuminate\Http\Request;
 
@@ -37,13 +38,43 @@ class SarmoController extends Controller
         return view('calendar');
     }
 
-    public function store(){
-        return "In bulding";
-    }
+    public function store(Request $request){
+
+        //colecting data for database
+        //$document = $request;
+
+       // $document->file(key:'document')->store(path:'documents');
+
+       // $contract = $request;
+     
+       // $contract->file(key: 'contract')->store(path: 'contracts');
+        
+        //$data = Registerfirs::create($request->all());
+        
+       // dd($data);
+
+       if($request->file('document')->isValid()){
+                        
+            $document=$request->file(key:'document')->store(path:'documents');
+           
+
+
+       }
+
+       
+        if($request->file('contract')->isValid()){
+            $contract = $request->file(key: 'contract')->store(path: 'contracts');
+            
+       }
+       Registerfirs::create($request->all());
+        
+    
+}
 
     public function store1(Request $request){
         //Insert new user data in table usertable
-       $user = createuser::create($request->all());
+        
+       $user = Createuser::create($request->all());
 
        dd($user);
 
