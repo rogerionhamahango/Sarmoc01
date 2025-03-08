@@ -10,7 +10,7 @@ class CreateUser extends Model
     use HasFactory;
     //Name of table for users
 
-    protected $table = 'usertable';
+    protected $table = 'users';
 
     //Gapes to be filled on table
 
@@ -20,5 +20,16 @@ class CreateUser extends Model
         'phonenumber',
         'password',
         'confirmpassword',
+    ];
+
+        /**
+     * The attributes that should be cast.
+     *
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+        'password' => 'hashed',
+        'confirmpassword'=> 'hashed'
     ];
 }

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SarmoController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,10 +15,12 @@ use App\Http\Controllers\SarmoController;
 |
 */
 Route::get('/', [SarmoController::class, 'login'])->name('login');
+Route::get('/login', [SarmoController::class, 'login'])->name('login');
 Route::get('/createuser', [SarmoController::class, 'createuser'])->name('createuser');
 Route::get('/recoverpassword', [SarmoController::class, 'recoverpassword'])->name('recoverpassword');
 Route::get('/register', [SarmoController::class, 'register'])->name('register');
-Route::post('/store', [SarmoController::class, 'store'])->name('store');
+Route::post('/store2', [SarmoController::class, 'store2'])->name('store2');
+Route::post('/store', [LoginController::class, 'store'])->name('store');
 Route::get('/calendar', [SarmoController::class, 'calendar'])->name('calendar');
 Route::post('/store1', [SarmoController::class, 'store1'])->name('store1');
 Route::get('/disciplinary_process', [SarmoController::class, 'disciplinary_process'])->name('disciplinary_process');

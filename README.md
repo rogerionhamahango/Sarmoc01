@@ -103,6 +103,10 @@ create model for createuser table
 sudo php artisan make:model CreateUser
 ```
 
+make controller for login
+
+```
+sudo php artisan make:controller LoginController --resource
 
 
 

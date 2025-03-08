@@ -406,7 +406,7 @@
                                             </ul>
                                             <div class="tab-content twitter-bs-wizard-tab-content">
                                                 <div class="tab-pane" id="seller-details">
-                                                    <form method="POST" action="{{route('store')}}" enctype="multipart/form-data">
+                                                    <form method="POST" action="{{route('store2')}}" enctype="multipart/form-data">
                                                         @csrf
                                                         <div class="row">
                                                             <div class="col-lg-6">
