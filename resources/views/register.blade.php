@@ -254,7 +254,7 @@
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
                                     alt="Header Avatar">
-                                <span class="d-none d-xl-inline-block ms-1">Julia</span>
+                                <span class="d-none d-xl-inline-block ms-1">Wellcome {{auth()->user()->fullname}}</span>
                                 <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                             </button>
                             <div class="dropdown-menu dropdown-menu-end">
@@ -264,7 +264,7 @@
                                 <a class="dropdown-item d-block" href="#"><span class="badge bg-success float-end mt-1">11</span><i class="ri-settings-2-line align-middle me-1"></i> Settings</a>
                                 <a class="dropdown-item" href="#"><i class="ri-lock-unlock-line align-middle me-1"></i> Lock screen</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item text-danger" href="#"><i class="ri-shut-down-line align-middle me-1 text-danger"></i> Logout</a>
+                                <a class="dropdown-item text-danger" href="{{route('destroy')}}"><i class="ri-shut-down-line align-middle me-1 text-danger"></i> Logout</a>
                             </div>
                         </div>
 
@@ -289,7 +289,7 @@
                             <img src="assets/images/logo_rm.png" alt="" class="avatar-md rounded-circle">
                         </div>
                         <div class="mt-3">
-                            <h4 class="font-size-16 mb-1">Rogerio Nhamahango</h4>
+                            <h4 class="font-size-16 mb-1">{{auth()->user()->fullname}}</h4>
                             <span class="text-muted"><i class="ri-record-circle-line align-middle font-size-14 text-success"></i> Online</span>
                         </div>
                     </div>

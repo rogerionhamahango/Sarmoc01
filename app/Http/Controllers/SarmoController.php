@@ -145,9 +145,7 @@ class SarmoController extends Controller
         return "In bulding";
     }
 
-    public function show(){
-        return "In building";
-    }
+    
 
     public function search(){
         return "In building";
@@ -159,6 +157,11 @@ class SarmoController extends Controller
 
     public function recoverpassword(){
         return view('recoverpassword');
+    }
+
+    public function destroy(){
+
+        return "In building";
     }
 
 

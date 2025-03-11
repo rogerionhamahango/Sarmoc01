@@ -24,12 +24,12 @@ Route::post('/store', [LoginController::class, 'store'])->name('store');
 Route::get('/calendar', [SarmoController::class, 'calendar'])->name('calendar');
 Route::post('/store1', [SarmoController::class, 'store1'])->name('store1');
 Route::get('/disciplinary_process', [SarmoController::class, 'disciplinary_process'])->name('disciplinary_process');
-//Route::get('/register', [SarmoController::class, 'register'])->name('register');
+Route::get('/loggedout', [SarmoController::class, 'destroy'])->name('destroy');
 
 
 Route::get('/prise', [SarmoController::class, 'prise'])->name('prise');
 Route::get('/appointement', [SarmoController::class, 'appointement'])->name('appointement');
 Route::get('/update', [SarmoController::class, 'update'])->name('update');
 Route::get('/search', [SarmoController::class, 'search'])->name('search');
-Route::get('/show', [SarmoController::class, 'show'])->name('show');
+Route::get('/show', [LoginController::class, 'show'])->name('show');
 Route::get('/delete', [SarmoController::class, 'delete'])->name('delete');

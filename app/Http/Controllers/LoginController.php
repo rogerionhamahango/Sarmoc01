@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 
 
@@ -63,9 +64,13 @@ class LoginController extends Controller
         /**
          * Display the specified resource.
          */
-        public function show(string $id)
+        public function show()
         {
-            //
+            //methods to show on a view workers informations
+            $workers = DB::table('workertable')->get();
+            
+
+            return view('listworker', ['users' => $workers]);
         }
 
         /**
